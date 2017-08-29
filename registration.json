@@ -1,0 +1,68 @@
+{
+  "tathva17" : {
+    "colleges" : {
+      "cid" : {
+        "data" : {
+          "nop" : "no of participants",
+          "students" : {
+            "uid" : "true/false"
+          }
+        },
+        "name" : "nitc"
+      }
+    },
+    "events" : {
+      "eid" : {
+        "category" : "category",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "unknown",
+        "time" : "unkown",
+        "venue" : "unknown"
+      }
+    },
+    "events_participants" : {
+      "eid" : {
+        "uid" : "registered/confirmed"
+      }
+    },
+    "hospitality" : {
+      "hid" : {
+        "uid" : "registered/confirmed"
+      }
+    },
+    "users" : {
+      "uid" : {
+        "bio" : {
+          "college" : "nitc",
+          "email" : "adeeb@adeeb.com",
+          "mobile" : 9999,
+          "name" : "adeeb"
+        },
+        "events" : {
+          "eid" : "epid"
+        },
+        "hospitality" : {
+          "hid" : "status"
+        },
+        "workshops" : {
+          "wid" : "wpid"
+        }
+      }
+    },
+    "workshop_participants" : {
+      "wid" : {
+        "uid" : "registered/confirmed"
+      }
+    },
+    "workshops" : {
+      "wid" : {
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "unknown",
+        "time" : "unkown",
+        "venue" : "nlhc 101"
+      }
+    }
+  }
+}
