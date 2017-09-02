@@ -13,17 +13,40 @@
     },
     "events" : {
       "eid" : {
+        "amount" : 2000,
         "category" : "category",
         "count" : "unknown",
         "date" : "unknown",
-        "name" : "unknown",
-        "time" : "unkown",
-        "venue" : "unknown"
+        "name" : "tathva",
+        "time" : "12 pm",
+        "venue" : "nlhc 101"
+      },
+      "eid2" : {
+        "amount" : 1000,
+        "category" : "cs",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "logiq",
+        "time" : "2 pm",
+        "venue" : "elhc pits"
+      },
+      "eid3" : {
+        "amount" : 1500,
+        "category" : "ece",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "wheels",
+        "time" : "10 am",
+        "venue" : "arya bhatta"
       }
     },
     "events_participants" : {
       "eid" : {
-        "uid" : "registered/confirmed"
+        "uid" : "registered",
+        "uid2" : "registered"
+      },
+      "eid2" : {
+        "uid" : "registered"
       }
     },
     "hospitality" : {
@@ -34,19 +57,37 @@
     "users" : {
       "uid" : {
         "bio" : {
-          "college" : "nitc",
-          "email" : "adeeb@adeeb.com",
-          "mobile" : 9999,
-          "name" : "adeeb"
+          "college" : "National Institute of Technology, Calicut",
+          "mobile" : "+91 9544677590",
+          "name" : "Adeeb Abdul Salam"
         },
+        "email" : "adeebnabdulsalam@gmail.com",
         "events" : {
-          "eid" : "epid"
+          "eid" : "registered",
+          "eid2" : "registered"
         },
         "hospitality" : {
           "hid" : "status"
         },
         "workshops" : {
-          "wid" : "wpid"
+          "wid" : "status"
+        }
+      },
+      "uid2" : {
+        "bio" : {
+          "college" : "College of Engineering,Thrissur",
+          "mobile" : "8281812001",
+          "name" : "Amruth Lal"
+        },
+        "email" : "amruth27m@gmail.com",
+        "events" : {
+          "eid" : "registered"
+        },
+        "hospitality" : {
+          "hid" : "status"
+        },
+        "workshops" : {
+          "wid" : "status"
         }
       }
     },
