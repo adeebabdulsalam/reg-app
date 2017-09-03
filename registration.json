@@ -42,11 +42,17 @@
     },
     "events_participants" : {
       "eid" : {
-        "uid" : "registered",
-        "uid2" : "registered"
+        "uid" : {
+          "status" : "registered"
+        },
+        "uid2" : {
+          "status" : "registered"
+        }
       },
       "eid2" : {
-        "uid" : "registered"
+        "uid" : {
+          "status" : "registered"
+        }
       }
     },
     "hospitality" : {
@@ -63,8 +69,12 @@
         },
         "email" : "adeebnabdulsalam@gmail.com",
         "events" : {
-          "eid" : "registered",
-          "eid2" : "registered"
+          "eid" : {
+            "status" : "registered"
+          },
+          "eid2" : {
+            "status" : "registered"
+          }
         },
         "hospitality" : {
           "hid" : "status"
@@ -81,7 +91,9 @@
         },
         "email" : "amruth27m@gmail.com",
         "events" : {
-          "eid" : "registered"
+          "eid" : {
+            "status" : "registered"
+          }
         },
         "hospitality" : {
           "hid" : "status"

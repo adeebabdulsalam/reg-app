@@ -21,12 +21,12 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "YOUR API KEY",
-    authDomain: "DATABASE REFERENCE",
-    databaseURL: "DATABASE URL",
-    projectId: "PROJECT ID",
-    storageBucket: "CONFIDENTIAL",
-    messagingSenderId: "CONFIDENTIAL"
+    apiKey: "AIzaSyBeI9nZRfOfPGYRm2jOUfOjgeV3L3d31Xw",
+    authDomain: "test-6d8be.firebaseapp.com",
+    databaseURL: "https://test-6d8be.firebaseio.com",
+    projectId: "test-6d8be",
+    storageBucket: "test-6d8be.appspot.com",
+    messagingSenderId: "809521618306"
   };
   firebase.initializeApp(config);
 </script>
@@ -146,6 +146,7 @@
                        <th>Venue</th>
                        <th>Time</th>
                        <th>Amount</th>
+                       <th>Status</th>
                        </tr>
                 </thead>
                 <tbody id='result-event'>
@@ -156,7 +157,8 @@
                 </div>
                     <div id='confirmation'>
                     <button id="confirm-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style='color:white; background-color: rgba(45, 241, 116, 0.51);' type="button">Confirm</button>
-                    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                    <button id="undo-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style='color:white; background-color: rgba(241, 45, 45, 0.51);' type="button">Undo</button>
+                    <div id="msgbar" class="mdl-js-snackbar mdl-snackbar">
                     <div class="mdl-snackbar__text"></div>
                     <button class="mdl-snackbar__action" type="button"></button>
                     </div>
