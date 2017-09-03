@@ -43,7 +43,7 @@
     "events_participants" : {
       "eid" : {
         "uid" : {
-          "status" : "registered"
+          "status" : "confirmed"
         },
         "uid2" : {
           "status" : "registered"
@@ -51,13 +51,27 @@
       },
       "eid2" : {
         "uid" : {
-          "status" : "registered"
+          "status" : "confirmed"
         }
       }
     },
     "hospitality" : {
       "hid" : {
-        "uid" : "registered/confirmed"
+        "amount" : 200,
+        "available" : 100,
+        "capacity" : 100,
+        "location" : "near atm circle",
+        "name" : "A hostel"
+      }
+    },
+    "hospitality_participants" : {
+      "hid" : {
+        "uid" : {
+          "status" : "booked"
+        },
+        "uid2" : {
+          "status" : "booked"
+        }
       }
     },
     "users" : {
@@ -70,17 +84,24 @@
         "email" : "adeebnabdulsalam@gmail.com",
         "events" : {
           "eid" : {
-            "status" : "registered"
+            "status" : "confirmed"
           },
           "eid2" : {
-            "status" : "registered"
+            "status" : "confirmed"
           }
         },
         "hospitality" : {
-          "hid" : "status"
+          "hid" : {
+            "status" : "booked"
+          }
         },
         "workshops" : {
-          "wid" : "status"
+          "wid" : {
+            "status" : "confirmed"
+          },
+          "wid2" : {
+            "status" : "confirmed"
+          }
         }
       },
       "uid2" : {
@@ -96,25 +117,44 @@
           }
         },
         "hospitality" : {
-          "hid" : "status"
+          "hid" : {
+            "status" : "booked"
+          }
         },
         "workshops" : {
-          "wid" : "status"
+          "wid" : {
+            "status" : "registered"
+          }
         }
-      }
-    },
-    "workshop_participants" : {
-      "wid" : {
-        "uid" : "registered/confirmed"
       }
     },
     "workshops" : {
       "wid" : {
-        "count" : "unknown",
-        "date" : "unknown",
-        "name" : "unknown",
-        "time" : "unkown",
-        "venue" : "nlhc 101"
+        "amount" : 750,
+        "name" : "IoT",
+        "time" : "9 AM",
+        "venue" : "nlhc 202"
+      },
+      "wid2" : {
+        "amount" : 1000,
+        "name" : "Arduino",
+        "time" : "10 AM",
+        "venue" : "elhc 301"
+      }
+    },
+    "workshops_participants" : {
+      "wid" : {
+        "uid" : {
+          "status" : "confirmed"
+        },
+        "uid2" : {
+          "status" : "registered"
+        }
+      },
+      "wid2" : {
+        "uid" : {
+          "status" : "confirmed"
+        }
       }
     }
   }
