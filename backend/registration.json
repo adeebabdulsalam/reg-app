@@ -1,0 +1,230 @@
+{
+  "tathva17" : {
+    "colleges" : {
+      "cid" : {
+        "data" : {
+          "nop" : "no of participants",
+          "students" : {
+            "uid" : "true/false"
+          }
+        },
+        "name" : "nitc"
+      }
+    },
+    "events" : {
+      "eid" : {
+        "amount" : 2000,
+        "category" : "category",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "tathva",
+        "time" : "12 pm",
+        "venue" : "nlhc 101"
+      },
+      "eid2" : {
+        "amount" : 1000,
+        "category" : "cs",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "logiq",
+        "time" : "2 pm",
+        "venue" : "elhc pits"
+      },
+      "eid3" : {
+        "amount" : 1500,
+        "category" : "ece",
+        "count" : "unknown",
+        "date" : "unknown",
+        "name" : "wheels",
+        "time" : "10 am",
+        "venue" : "arya bhatta"
+      }
+    },
+    "events_participants" : {
+      "eid" : {
+        "uid" : {
+          "status" : "registered"
+        },
+        "uid2" : {
+          "status" : "registered"
+        }
+      },
+      "eid2" : {
+        "uid" : {
+          "status" : "registered"
+        }
+      }
+    },
+    "group_participants" : {
+      "gid" : {
+        "tid" : {
+          "status" : "registered"
+        }
+      },
+      "gid2" : {
+        "tid" : {
+          "status" : "registered"
+        }
+      },
+      "status" : {
+        "tid" : {
+          "status" : "confirmed"
+        }
+      }
+    },
+    "groupevents" : {
+      "gid" : {
+        "amount" : 3000,
+        "day" : "saturday",
+        "max" : 4,
+        "min" : 2,
+        "name" : "pin ball",
+        "time" : "2 PM",
+        "venue" : "MB"
+      },
+      "gid2" : {
+        "amount" : 1500,
+        "day" : "friday",
+        "max" : 3,
+        "min" : 3,
+        "name" : "choreo nite",
+        "time" : "10 PM",
+        "venue" : "oat"
+      }
+    },
+    "hospitality" : {
+      "hid" : {
+        "amount" : 200,
+        "available" : 100,
+        "capacity" : 100,
+        "for" : "male",
+        "location" : "near atm circle",
+        "name" : "A hostel"
+      },
+      "hid2" : {
+        "amount" : 200,
+        "available" : 100,
+        "capacity" : 100,
+        "for" : "male",
+        "location" : "near atm circle",
+        "name" : "B hostel"
+      },
+      "hid3" : {
+        "amount" : 200,
+        "available" : 100,
+        "capacity" : 100,
+        "for" : "female",
+        "location" : "next campus",
+        "name" : "LH"
+      }
+    },
+    "teams" : {
+      "tid" : {
+        "groupevents" : {
+          "gid" : {
+            "status" : "registered"
+          },
+          "gid2" : {
+            "status" : "registered"
+          }
+        },
+        "leader" : "adeebnabdulsalam@gmail.com",
+        "members" : {
+          "uid" : "adeebnabdulsalam@gmail.com",
+          "uid3" : "amruth27m@gmail.com"
+        },
+        "name" : "A team"
+      }
+    },
+    "users" : {
+      "uid" : {
+        "bio" : {
+          "college" : "National Institute of Technology, Calicut",
+          "gender" : "male",
+          "mobile" : "+91 9544677590",
+          "name" : "Adeeb Abdul Salam"
+        },
+        "email" : "adeebnabdulsalam@gmail.com",
+        "events" : {
+          "eid" : {
+            "status" : "registered"
+          },
+          "eid2" : {
+            "status" : "registered"
+          }
+        },
+        "hospitality" : {
+          "status" : "booked"
+        },
+        "workshops" : {
+          "wid" : {
+            "status" : "registered"
+          },
+          "wid2" : {
+            "status" : "registered"
+          }
+        }
+      },
+      "uid2" : {
+        "bio" : {
+          "college" : "University of Toronto",
+          "gender" : "female",
+          "mobile" : "8281812001",
+          "name" : "Aisha Abdul Rahiman"
+        },
+        "email" : "aisharahimanl@gmail.com",
+        "events" : {
+          "eid" : {
+            "status" : "registered"
+          }
+        },
+        "hospitality" : {
+          "status" : "booked"
+        },
+        "workshops" : {
+          "wid" : {
+            "status" : "registered"
+          }
+        }
+      },
+      "uid3" : {
+        "bio" : {
+          "college" : "National Institute of Technology, Calicut",
+          "gender" : "male",
+          "mobile" : "+91 9567014555",
+          "name" : "Amruth Mangalath"
+        },
+        "email" : "amruth27m@gmail.com"
+      }
+    },
+    "workshops" : {
+      "wid" : {
+        "amount" : 750,
+        "name" : "IoT",
+        "time" : "9 AM",
+        "venue" : "nlhc 202"
+      },
+      "wid2" : {
+        "amount" : 1000,
+        "name" : "Arduino",
+        "time" : "10 AM",
+        "venue" : "elhc 301"
+      }
+    },
+    "workshops_participants" : {
+      "wid" : {
+        "uid" : {
+          "status" : "registered"
+        },
+        "uid2" : {
+          "status" : "registered"
+        }
+      },
+      "wid2" : {
+        "uid" : {
+          "status" : "registered"
+        }
+      }
+    }
+  }
+}

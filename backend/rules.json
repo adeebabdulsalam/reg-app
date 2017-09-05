@@ -1,0 +1,25 @@
+{
+  "rules": {
+    ".write": true,
+      ".read": true,
+    "tathva17": {
+      "users":{
+        
+        ".indexOn":["email"]  
+        
+      },
+      "hospitality":{
+        ".indexOn":["for"]
+      },
+       "hospitality_participants":{
+         ".indexOn":".value"
+       },
+       "teams":{
+         ".indexOn":["leader"]
+       },
+        "group_participants":{
+          ".indexOn":".value"
+        } 
+    }
+  }
+}
