@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Material Design CDN-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/checkbox.css">
+        <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+        <link rel="stylesheet" href="css/table.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>   
+        <!--Material Design CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+        
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBeI9nZRfOfPGYRm2jOUfOjgeV3L3d31Xw",
+    authDomain: "test-6d8be.firebaseapp.com",
+    databaseURL: "https://test-6d8be.firebaseio.com",
+    projectId: "test-6d8be",
+    storageBucket: "test-6d8be.appspot.com",
+    messagingSenderId: "809521618306"
+  };
+  firebase.initializeApp(config);
+</script>
+       <style>
+            #bg{ 
+             background: #16222A;  /* fallback for old browsers */
+             background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+             background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         }
+         
+         #search-name{
+             margin-left: 35%;
+             margin-top: 3%;
+         }
+         #search-label{
+             color: graytext;
+         }
+         .profile{
+             background-color: #20262e;
+             margin-left: 10%;
+             max-width: 600px;
+         }
+         .profile-name{
+             color:white;
+             font-family: sans-serif;
+             font-size: 20px;
+             text-align: center;
+             padding: auto;
+         }
+         .profile-bio{
+            color: #ca7a7a;
+             padding-left: 30px; 
+         }
+         #result-clg{
+             color: white;
+             padding-left: 5px;
+         }
+         #result-num{
+             color: white;
+             padding-left: 5px;
+         }
+         #result-gender{
+             color: white;
+             padding-left: 5px;
+         }
+         #confirmation{
+            margin-left: 46.5%;
+         }
+        </style>
+    </head>
+    <body id='bg'>
+        
+        
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Events/Workshop Confirmation</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <i class="material-icons">&#xE851;</i>Executive Name
+        <a class="mdl-navigation__link" href=""><i class="material-icons">&#xE879;</i>Logout</a>
+        </nav>
+        </div>
+        </header>
+        <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Choose the task</span>
+        <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="e-c.html">Events confirmation</a>
+        <a class="mdl-navigation__link" href="g-c.html">Group Event confirmation</a>
+        <a class="mdl-navigation__link" href="h-c.html">Hospitality confirmation</a>
+        <a class="mdl-navigation__link" href="">New registration</a>
+        <a class="mdl-navigation__link" href="">Events registration</a>
+        <a class="mdl-navigation__link" href="">Group Event Registration</a>
+        <a class="mdl-navigation__link" href="">Hospitality booking</a>
+        <a class="mdl-navigation__link" href="">Events verification</a>
+        <a class="mdl-navigation__link" href="">Group Event verification</a>
+        </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                 
+                   <div id='search-name'>
+                       <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="email" id="search">
+                        <label id='search-label' class="mdl-textfield__label" for="search">Enter email</label>
+                        </div>
+                        <button id='search-button' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        Search
+                        </button>
+                       </form>                       
+                   </div>
+                <div class='mdl-grid'>
+                    
+                    <div class='mdl-cell mdl-cell--6-col'>
+                   <div class='jumbotron mdl-shadow--4dp profile'>
+                       <div>
+                           <h2 class='profile-name' id='temp-name' style='color:#746f6f'>Name of Student</h2>    
+                           <h2 class='profile-name' id='result-name'></h2> 
+                       </div>
+                       <hr>
+                       <div class='profile-bio'>
+                           <p style='font-size:15px;'>College:<span id='result-clg'></span></p>
+                           <br>
+                           <p style='font-size:15px;'>Mobile:<span id='result-num'></span></p>
+                           <br>
+                           <p style='font-size:15px;'>Gender:<span id='result-gender'></span></p>
+                       </div>                    
+                   </div>
+                    </div>
+                
+                                  
+                  <div class='mdl-cell mdl-cell--6-col'>
+                 <div class='container2'>            
+                 <table id='result-table' class='mdl-shadow--4dp' style="display: none;">
+                 <thead>
+                       <tr>
+                       <th>
+                       <div class="squaredOne">
+                       <input type="checkbox" value="None" id="master" name="check" checked />
+                       <label for="master"></label>
+                       </div>
+                       </th>
+                       <th>Events/Workshop</th>
+                       <th>Venue</th>
+                       <th>Time</th>
+                       <th>Amount</th>
+                       <th>Status</th>
+                       </tr>
+                </thead>
+                <tbody id='result-event'>
+                </tbody>
+                <tr>
+                  <td><!--<div class='squaredOne'><input type='checkbox' class='checkall' value='None' id='"+eid.key+"' name='check' checked /><label for='"+eid.key+"'></label></div>-->
+                  </td>
+                  <td>Total</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td id='total-amt'></td>
+                  <td>INR</td>
+                </tr>
+                </table>
+                </div>
+                </div>                 
+                </div>
+                    <div id='confirmation'>
+                    <button id="confirm-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style='color:white; background-color: rgba(45, 241, 116, 0.51); display: none;' type="button">Confirm</button>
+                    <button id="undo-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style='color:white; background-color: rgba(241, 45, 45, 0.51); display: none;' type="button">Undo</button>
+                    <div id="msgbar" class="mdl-js-snackbar mdl-snackbar">
+                    <div class="mdl-snackbar__text"></div>
+                    <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                    </div>
+            </div>
+        </main>
+        </div> 
+        <script src="js/e-c.js"></script> 
+    </body>
+</html>
